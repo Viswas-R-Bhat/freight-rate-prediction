@@ -1,0 +1,9 @@
+,MAE,MAPE_%,within_5%,MAE_clean,bias_%
+final model,102.57,4.36,94.82,51.06,-1.11
+no trend term,107.5,4.52,93.88,56.06,-1.45
+L1 loss instead of Huber,104.2,4.49,93.67,52.72,-1.17
+no day-of-year feature,104.66,4.42,93.71,53.19,-1.41
+recency weights (60-day half-life),106.19,4.48,93.72,54.72,-1.32
+"+ straight-line distance, circuity",102.46,4.35,95.11,50.95,-1.11
+"bigger trees (63 leaves, 1200 trees)",104.75,4.45,94.3,53.26,-1.37
+sklearn HistGradientBoosting,107.85,4.56,93.45,56.41,-1.33
