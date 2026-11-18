@@ -1,0 +1,6 @@
+__pycache__/
+.impeccable/
+
+# provided data (not redistributed)
+data/*
+!data/december-chart-inputs.csv
