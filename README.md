@@ -38,7 +38,6 @@ data/
 python train.py          # holdout metrics, validation_predictions.csv, December predictions
 python score.py --predictions validation_predictions.csv --december-predictions data/december-chart-inputs.csv
 python experiments.py    # optional, ablation table in results/experiments.csv
-python make_report.py    # report/report.docx
 ```
 
 `python train.py --eval-only` prints the holdout metrics without writing any files.
@@ -48,7 +47,6 @@ python make_report.py    # report/report.docx
 ```
 train.py                     cleaning, features, holdout evaluation, final fit, predictions
 experiments.py               ablations behind the modelling choices
-make_report.py               builds the report
 score.py                     provided scorer, validates outputs and draws the December chart
 validation_predictions.csv   final predictions for the 12,000 validation loads
 results/                     metrics.json, experiments.csv
