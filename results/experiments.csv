@@ -1,9 +1,11 @@
-,MAE,MAPE_%,within_5%,MAE_clean,bias_%
-final model,102.57,4.36,94.82,51.06,-1.11
-no trend term,107.5,4.52,93.88,56.06,-1.45
-L1 loss instead of Huber,104.2,4.49,93.67,52.72,-1.17
-no day-of-year feature,104.66,4.42,93.71,53.19,-1.41
-recency weights (60-day half-life),106.19,4.48,93.72,54.72,-1.32
-"+ straight-line distance, circuity",102.46,4.35,95.11,50.95,-1.11
-"bigger trees (63 leaves, 1200 trees)",104.75,4.45,94.3,53.26,-1.37
-sklearn HistGradientBoosting,107.85,4.56,93.45,56.41,-1.33
+,MAE May-Jun,MAE_clean May-Jun,MAE Jul-Aug,MAE_clean Jul-Aug,MAE_clean Aug,MAE Sep-Oct,MAE_clean Sep-Oct,MAPE_% Sep-Oct,within_5% Sep-Oct,bias_% Sep-Oct,MAE_clean mean,MAE_clean worst
+final model,97.71,49.0,94.48,44.64,50.17,95.08,43.41,4.19,96.7,-0.72,45.68,49.0
++ per-load quote_signal,79.3,30.4,120.78,71.45,118.05,85.28,33.51,3.79,98.35,0.21,45.12,71.45
++ day-of-year feature,96.86,48.12,120.83,71.3,77.14,96.49,44.82,4.27,95.79,0.09,54.75,71.3
+no day's mean quote,110.15,61.55,91.9,42.0,46.09,116.13,64.8,4.97,89.34,-2.13,56.12,64.8
+no trend term,100.22,51.54,111.65,62.01,78.19,125.17,73.94,5.4,85.52,-2.77,62.5,73.94
+L1 loss instead of Huber,98.32,49.62,94.96,45.12,50.21,95.98,44.32,4.24,96.52,-0.78,46.35,49.62
+recency weights (60-day half-life),97.44,48.72,94.28,44.43,49.64,94.8,43.13,4.18,96.77,-0.61,45.43,48.72
+"+ straight-line distance, circuity",97.08,48.36,94.44,44.59,50.01,94.51,42.85,4.17,96.88,-0.68,45.27,48.36
+bigger trees (63 leaves),97.73,49.03,94.58,44.73,50.54,94.65,42.97,4.17,96.89,-0.67,45.58,49.03
+sklearn HistGradientBoosting,102.36,53.66,95.37,45.53,50.17,97.19,45.57,4.27,96.24,-0.79,48.25,53.66
